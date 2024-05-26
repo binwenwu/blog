@@ -18,11 +18,13 @@ const client = new Client({
 })
 
 export const queryProfileREADME = cache(async () => {
+  const profile_repo = 'blog_profile'
+  console.log('profile_repo', profile_repo)
   const [masterResult, mainResult] = await Promise.allSettled([
     graphql<RepositoryFile>(
       `
         query queryProfileREADME($owner: String!, $file: String!) {
-          repository(owner: $owner, name: blog_profile) {
+          repository(owner: $owner, name: $profile_repo) {
             object(expression: $file) {
               ... on Blob {
                 text
@@ -39,7 +41,7 @@ export const queryProfileREADME = cache(async () => {
     graphql<RepositoryFile>(
       `
         query queryProfileREADME($owner: String!, $file: String!) {
-          repository(owner: $owner, name: blog_profile) {
+          repository(owner: $owner, name: $profile_repo) {
             object(expression: $file) {
               ... on Blob {
                 texts
