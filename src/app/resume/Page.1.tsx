@@ -1,9 +1,10 @@
-import Link from 'next/link';
-import { IconX } from '@tabler/icons-react';
-import dayjs from 'dayjs';
-import { Dot } from '@/components/blocks/resume';
-import { Typed, TypedContent, TypedText } from '@/components/typed';
+import Link from 'next/link'
 
+import { IconX } from '@tabler/icons-react'
+import dayjs from 'dayjs'
+
+import { Dot } from '@/components/blocks/resume'
+import { Typed, TypedContent, TypedText } from '@/components/typed'
 
 export default function Page() {
   return (
@@ -160,5 +161,5 @@ export default function Page() {
         </div>
       </main>
     </div>
-  );
+  )
 }
