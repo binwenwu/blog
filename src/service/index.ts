@@ -18,6 +18,7 @@ const client = new Client({
 })
 
 export const queryProfileREADME = cache(async () => {
+  return "Hi, I'm Binwen Wu, a Developer 🚀 from China. I have a passion for open source technology and am committed to becoming an excellent independent developer 💻"
   const [masterResult, mainResult] = await Promise.allSettled([
     graphql<RepositoryFile>(
       `
@@ -72,7 +73,7 @@ export const queryProfileREADME = cache(async () => {
   return {
     repository: {
       object: {
-        text: "Hi, I'm Binwen Wu, a Developer 🚀 from China. I have a passion for open source technology and am committed to becoming an excellent independent developer 💻",
+        text: 'create [GitHub profile repository](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/about-your-profile) to use Bio block.',
       },
     },
   }
