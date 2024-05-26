@@ -19,56 +19,58 @@ const client = new Client({
 })
 
 export const queryProfileREADME = cache(async () => {
-  // const [masterResult, mainResult] = await Promise.allSettled([
-  //   graphql<RepositoryFile>(
-  //     `
-  //       query queryProfileREADME($owner: String!, $file: String!) {
-  //         repository(owner: $owner, name: $profile_repo") {
-  //           object(expression: $file) {
-  //             ... on Blob {
-  //               text
-  //             }
-  //           }
-  //         }
-  //       }
-  //     `,
-  //     {
-  //       owner: repoOwner,
-  //       file: 'master:README.md',
-  //     },
-  //   ),
-  //   graphql<RepositoryFile>(
-  //     `
-  //       query queryProfileREADME($owner: String!, $file: String!) {
-  //         repository(owner: $owner, name: $profile_repo) {
-  //           object(expression: $file) {
-  //             ... on Blob {
-  //               text
-  //             }
-  //           }
-  //         }
-  //       }
-  //     `,
-  //     {
-  //       owner: repoOwner,
-  //       file: 'main:README.md',
-  //     },
-  //   ),
-  // ])
+  const [masterResult, mainResult] = await Promise.allSettled([
+    graphql<RepositoryFile>(
+      `
+        query queryProfileREADME($owner: String!, $file: String!) {
+          repository(owner: $owner, name: $profile_repo") {
+            object(expression: $file) {
+              ... on Blob {
+                text
+              }
+            }
+          }
+        }
+      `,
+      {
+        owner: repoOwner,
+        file: 'master:README.md',
+      },
+    ),
+    graphql<RepositoryFile>(
+      `
+        query queryProfileREADME($owner: String!, $file: String!) {
+          repository(owner: $owner, name: $profile_repo) {
+            object(expression: $file) {
+              ... on Blob {
+                text
+              }
+            }
+          }
+        }
+      `,
+      {
+        owner: repoOwner,
+        file: 'main:README.md',
+      },
+    ),
+  ])
 
-  // if (masterResult.status === 'fulfilled') {
-  //   const { repository } = masterResult.value
-  //   if (repository?.object?.text) {
-  //     return masterResult.value
-  //   }
-  // }
+  if (masterResult.status === 'fulfilled') {
+    const { repository } = masterResult.value
+    if (repository?.object?.text) {
+      console.log('masterResult.value', masterResult.value)
+      return masterResult.value
+    }
+  }
 
-  // if (mainResult.status === 'fulfilled') {
-  //   const { repository } = mainResult.value
-  //   if (repository?.object?.text) {
-  //     return mainResult.value
-  //   }
-  // }
+  if (mainResult.status === 'fulfilled') {
+    const { repository } = mainResult.value
+    if (repository?.object?.text) {
+      console.log('mainResult.value', mainResult.value)
+      return mainResult.value
+    }
+  }
 
   return {
     repository: {
