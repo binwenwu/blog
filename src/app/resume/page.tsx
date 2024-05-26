@@ -52,7 +52,7 @@ export default function Page() {
             <TypedContent>
               <div className='grid grid-cols-2 gap-2 px-4 font-semibold text-sky-500'>
                 <span>opensource</span>
-                <span>projects</span> 
+                <span>projects</span>
                 <span>blog-info</span>
                 <span>experience</span>
                 <span>skills</span>
