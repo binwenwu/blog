@@ -5,7 +5,7 @@ import { unstable_cache as cache } from 'next/cache'
 import { Client } from '@discublog/api/client'
 import { Octokit } from '@octokit/core'
 
-import { repoName, repoOwner } from '~/blog-config'
+import { repoName, repoOwner, profileRepo } from '~/blog-config'
 
 import type { RepositoryFile, PinnedItems } from './interface'
 
@@ -15,7 +15,7 @@ const client = new Client({
   token: process.env.GITHUB_TOKEN!,
   name: repoName,
   owner: repoOwner,
-  profile_repo: 'blog_profile',
+  profile_repo: profileRepo,
 })
 
 export const queryProfileREADME = cache(async () => {
