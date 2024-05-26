@@ -72,7 +72,7 @@ export const queryProfileREADME = cache(async () => {
   return {
     repository: {
       object: {
-        text: 'create [GitHub profile repository](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/about-your-profile) to use Bio block.',
+        text: "Hi, I'm Binwen Wu, a Developer 🚀 from China.",
       },
     },
   }
