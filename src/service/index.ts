@@ -5,7 +5,7 @@ import { unstable_cache as cache } from 'next/cache'
 import { Client } from '@discublog/api/client'
 import { Octokit } from '@octokit/core'
 
-import { repoName, repoOwner, profileRepo } from '~/blog-config'
+import { repoName, repoOwner } from '~/blog-config'
 
 import type { RepositoryFile, PinnedItems } from './interface'
 
@@ -15,7 +15,6 @@ const client = new Client({
   token: process.env.GITHUB_TOKEN!,
   name: repoName,
   owner: repoOwner,
-  profile_repo: profileRepo,
 })
 
 export const queryProfileREADME = cache(async () => {
@@ -23,7 +22,7 @@ export const queryProfileREADME = cache(async () => {
     graphql<RepositoryFile>(
       `
         query queryProfileREADME($owner: String!, $file: String!) {
-          repository(owner: $owner, name: $profile_repo") {
+          repository(owner: $owner, name: blog_profile) {
             object(expression: $file) {
               ... on Blob {
                 text
@@ -40,10 +39,10 @@ export const queryProfileREADME = cache(async () => {
     graphql<RepositoryFile>(
       `
         query queryProfileREADME($owner: String!, $file: String!) {
-          repository(owner: $owner, name: $profile_repo) {
+          repository(owner: $owner, name: blog_profile) {
             object(expression: $file) {
               ... on Blob {
-                text
+                texts
               }
             }
           }
