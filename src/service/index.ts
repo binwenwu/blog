@@ -19,61 +19,61 @@ const client = new Client({
 })
 
 export const queryProfileREADME = cache(async () => {
-  // const [masterResult, mainResult] = await Promise.allSettled([
-  //   graphql<RepositoryFile>(
-  //     `
-  //       query queryProfileREADME($owner: String!, $file: String!) {
-  //         repository(owner: $owner, name: $blog_profile") {
-  //           object(expression: $file) {
-  //             ... on Blob {
-  //               text
-  //             }
-  //           }
-  //         }
-  //       }
-  //     `,
-  //     {
-  //       owner: repoOwner,
-  //       file: 'master:README.md',
-  //     },
-  //   ),
-  //   graphql<RepositoryFile>(
-  //     `
-  //       query queryProfileREADME($owner: String!, $file: String!) {
-  //         repository(owner: $owner, name: $blog_profile) {
-  //           object(expression: $file) {
-  //             ... on Blob {
-  //               text
-  //             }
-  //           }
-  //         }
-  //       }
-  //     `,
-  //     {
-  //       owner: repoOwner,
-  //       file: 'main:README.md',
-  //     },
-  //   ),
-  // ])
+  const [masterResult, mainResult] = await Promise.allSettled([
+    graphql<RepositoryFile>(
+      `
+        query queryProfileREADME($owner: String!, $file: String!) {
+          repository(owner: $owner, name: $profile_repo") {
+            object(expression: $file) {
+              ... on Blob {
+                text
+              }
+            }
+          }
+        }
+      `,
+      {
+        owner: repoOwner,
+        file: 'master:README.md',
+      },
+    ),
+    graphql<RepositoryFile>(
+      `
+        query queryProfileREADME($owner: String!, $file: String!) {
+          repository(owner: $owner, name: $profile_repo) {
+            object(expression: $file) {
+              ... on Blob {
+                text
+              }
+            }
+          }
+        }
+      `,
+      {
+        owner: repoOwner,
+        file: 'main:README.md',
+      },
+    ),
+  ])
 
-  // if (masterResult.status === 'fulfilled') {
-  //   const { repository } = masterResult.value
-  //   if (repository?.object?.text) {
-  //     return masterResult.value
-  //   }
-  // }
+  if (masterResult.status === 'fulfilled') {
+    const { repository } = masterResult.value
+    if (repository?.object?.text) {
+      return masterResult.value
+    }
+  }
 
-  // if (mainResult.status === 'fulfilled') {
-  //   const { repository } = mainResult.value
-  //   if (repository?.object?.text) {
-  //     return mainResult.value
-  //   }
-  // }
+  if (mainResult.status === 'fulfilled') {
+    const { repository } = mainResult.value
+    if (repository?.object?.text) {
+      return mainResult.value
+    }
+  }
 
   return {
     repository: {
       object: {
-        text: "Hi, I'm Binwen Wu, a Developer 🚀 from China. I have a passion for open source technology and am committed to becoming an excellent independent developer 💻",
+        text: 'create [GitHub profile repository](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/about-your-profile) to use Bio block.',
       },
     },
   }
