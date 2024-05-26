@@ -2,7 +2,7 @@
 
 My personal blog.
 
-[zhangyu.dev](zhangyu.dev)
+[tankenqi.cn](tankenqi.cn)
 
 Using [Next.js](https://nextjs.org/) v14 App Router and React Server Components. Styling with [TailwindCSS](https://tailwindcss.com/).
 
