@@ -18,12 +18,12 @@ const client = new Client({
 })
 
 export const queryProfileREADME = cache(async () => {
-  return "Hi, I'm Binwen Wu, a Developer 🚀 from China. I have a passion for open source technology and am committed to becoming an excellent independent developer 💻"
+  // return "Hi, I'm Binwen Wu, a Developer 🚀 from China. I have a passion for open source technology and am committed to becoming an excellent independent developer 💻"
   const [masterResult, mainResult] = await Promise.allSettled([
     graphql<RepositoryFile>(
       `
         query queryProfileREADME($owner: String!, $file: String!) {
-          repository(owner: $owner, name: $owner) {
+          repository(owner: $owner, name: blog_profile) {
             object(expression: $file) {
               ... on Blob {
                 text
@@ -40,7 +40,7 @@ export const queryProfileREADME = cache(async () => {
     graphql<RepositoryFile>(
       `
         query queryProfileREADME($owner: String!, $file: String!) {
-          repository(owner: $owner, name: $owner) {
+          repository(owner: $owner, name: blog_profile) {
             object(expression: $file) {
               ... on Blob {
                 text
