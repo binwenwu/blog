@@ -15,6 +15,7 @@ const client = new Client({
   token: process.env.GITHUB_TOKEN!,
   name: repoName,
   owner: repoOwner,
+  profile_repo: 'blog_profile',
 })
 
 export const queryProfileREADME = cache(async () => {
@@ -23,7 +24,7 @@ export const queryProfileREADME = cache(async () => {
     graphql<RepositoryFile>(
       `
         query queryProfileREADME($owner: String!, $file: String!) {
-          repository(owner: $owner, name: blog_profile) {
+          repository(owner: $owner, name: $blog_profile") {
             object(expression: $file) {
               ... on Blob {
                 text
@@ -40,7 +41,7 @@ export const queryProfileREADME = cache(async () => {
     graphql<RepositoryFile>(
       `
         query queryProfileREADME($owner: String!, $file: String!) {
-          repository(owner: $owner, name: blog_profile) {
+          repository(owner: $owner, name: $blog_profile) {
             object(expression: $file) {
               ... on Blob {
                 text
