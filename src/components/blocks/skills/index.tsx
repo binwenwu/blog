@@ -3,15 +3,19 @@ import { type StaticImageData } from 'next/image'
 
 import cssSvg from '@/images/logo/css.svg'
 import gatsbySvg from '@/images/logo/gatsby.svg'
+import golangSvg from '@/images/logo/golang.svg'
 import graphqlSvg from '@/images/logo/graphql.svg'
+import hadoopSvg from '@/images/logo/hadoop.svg'
 import htmlSvg from '@/images/logo/html.svg'
 import javascriptSvg from '@/images/logo/javascript.svg'
+import linuxSvg from '@/images/logo/linux.svg'
 import nestjsSvg from '@/images/logo/nestjs.svg'
 import nextjsSvg from '@/images/logo/nextjs.svg'
 import nodejsSvg from '@/images/logo/nodejs.svg'
 import prismaSvg from '@/images/logo/prisma.svg'
 import reactNativeSvg from '@/images/logo/react-native.svg'
 import reactSvg from '@/images/logo/react.svg'
+import sparkSvg from '@/images/logo/spark.svg'
 import swiftSvg from '@/images/logo/swift.svg'
 import tailwindCSSSvg from '@/images/logo/tailwind-css.svg'
 import typeScriptSvg from '@/images/logo/typescript.svg'
@@ -41,6 +45,10 @@ const images: StaticImageData[] = [
   nestjsSvg,
   prismaSvg,
   graphqlSvg,
+  sparkSvg,
+  hadoopSvg,
+  golangSvg,
+  linuxSvg,
 ]
 export const Skills = () => {
   return (
