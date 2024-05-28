@@ -26,6 +26,6 @@
   "33": "Configure VMware's virtual network editor for a static IP, set the VM's IP in the network script, and verify by restarting the network and pinging an external site.",
   "34": "How to call parent component methods from a child component in Vue.js, including examples and use cases.",
   "35": "The article describes an issue where yum could not retrieve mirror resources from mirrorlist.centos.org. The author tried various troubleshooting methods and ultimately resolved the problem by replacing the /var/cache/yum cache files, which contain mirror source metadata information.",
-  "36": "Guide on setting up a Kubernetes cluster using Containerd as the container runtime, detailing installation and configuration steps.",
-  "37": "Guide on setting up a Kubernetes cluster using Docker as the container runtime, detailing installation and configuration steps."
+  "36": "Guide on setting up a Kubernetes cluster using Docker as the container runtime, detailing installation and configuration steps.",
+  "37": "Guide on setting up a Kubernetes cluster using Containerd as the container runtime, detailing installation and configuration steps."
 }
