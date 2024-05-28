@@ -38,7 +38,7 @@ export default function Page() {
               </p>
               <p>
                 I am currently a college student and have been immersed in the
-                world of computer science since <strong>2018</strong>, focusing
+                world of computer science since <strong>2020</strong>, focusing
                 on honing my programming and software development skills. My
                 passion lies in developing elegant and efficient solutions for
                 complex problems.
