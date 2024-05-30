@@ -49,8 +49,9 @@ export async function Markdown(props: MarkdownProps) {
         [
           rehypeShiki,
           {
+            // 主题配置
             themes: {
-              light: 'github-light',
+              light: 'dracula',
               dark: 'dracula-soft',
             },
             transformers: [
