@@ -27,5 +27,6 @@
   "34": "How to call parent component methods from a child component in Vue.js, including examples and use cases.",
   "35": "The article describes an issue where yum could not retrieve mirror resources from mirrorlist.centos.org. The author tried various troubleshooting methods and ultimately resolved the problem by replacing the /var/cache/yum cache files, which contain mirror source metadata information.",
   "36": "Guide on setting up a Kubernetes cluster using Docker as the container runtime, detailing installation and configuration steps.",
-  "37": "Guide on setting up a Kubernetes cluster using Containerd as the container runtime, detailing installation and configuration steps."
+  "37": "Guide on setting up a Kubernetes cluster using Containerd as the container runtime, detailing installation and configuration steps.",
+  "38": "The article explains how to mount a new disk to a directory in Linux, covering steps such as listing disks, creating a filesystem, and mounting the disk."
 }
