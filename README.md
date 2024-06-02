@@ -30,7 +30,7 @@ Using [@discublog/api](https://github.com/discublog/api) to query GitHub reposit
 3. Modify Google verification [here](https://github.com/binwenwu/blog/blob/main/src/app/layout.tsx#L65).
 4. Modify the Giscus script [here](https://github.com/binwenwu/blog/blob/main/src/components/giscus/index.tsx#L17-L18).
 5. Modify the [resume page](https://github.com/binwenwu/blog/blob/main/src/app/resume/page.tsx).
-6. Put your avatar file in `src/images/avatar.png`.
+6. Put your avatar file in `src/images/avatar.webp`.
 7. Put your favicon file in `src/app/favicon.ico`.
 8. Put your icons in `public/icon`.
 

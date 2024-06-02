@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 import { clsx } from 'clsx'
 
-import avatarImg from '@/images/avatar.png'
+import avatarImg from '@/images/avatar.webp'
 
 import { useIsServer } from '@/hooks/useIsServer'
 
