@@ -133,7 +133,7 @@ export default function Page() {
             <TypedContent>
               <p>
                 I am currently studying at <strong>Wuhan University</strong>,
-                majoring in
+                majoring in 
                 <strong>Computer Science</strong>.
               </p>
               <p>
