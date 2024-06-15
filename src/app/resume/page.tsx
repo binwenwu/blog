@@ -133,8 +133,8 @@ export default function Page() {
             <TypedContent>
               <p>
                 I am currently studying at <strong>Wuhan University</strong>,
-                majoring in 
-                <strong>Computer Science</strong>.
+                majoring in
+                <strong> Computer Science</strong>.
               </p>
               <p>
                 I have a solid foundation in computer science and have taken
