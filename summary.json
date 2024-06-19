@@ -29,5 +29,6 @@
   "36": "Guide on setting up a Kubernetes cluster using Docker as the container runtime, detailing installation and configuration steps.",
   "37": "Guide on setting up a Kubernetes cluster using Containerd as the container runtime, detailing installation and configuration steps.",
   "38": "The article explains how to mount a new disk to a directory in Linux, covering steps such as listing disks, creating a filesystem, and mounting the disk.",
-  "39": "The article introduces Makefile, explaining its purpose, structure, and how to use it for automating the build process of software projects."
+  "39": "The article introduces Makefile, explaining its purpose, structure, and how to use it for automating the build process of software projects.",
+  "40": "This article provides shortcut key instructions for some commonly used NeoVim distributions - NvChad"
 }
