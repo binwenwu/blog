@@ -31,5 +31,7 @@
   "38": "The article explains how to mount a new disk to a directory in Linux, covering steps such as listing disks, creating a filesystem, and mounting the disk.",
   "39": "The article introduces Makefile, explaining its purpose, structure, and how to use it for automating the build process of software projects.",
   "40": "This article provides shortcut key instructions for some commonly used NeoVim distributions - NvChad",
-  "41": "This article explains how to install and configure Zsh, utilizing Oh-My-Zsh to enhance terminal appearance with themes and plugins."
+  "41": "This article explains how to install and configure Zsh, utilizing Oh-My-Zsh to enhance terminal appearance with themes and plugins.",
+  "42": "This article briefly provides the commonly used commands and shortcut keys of the terminal reuse tool tmux. ",
+  "43": "This article briefly introduces the commonly used shortcut keys of the bash shell."
 }
