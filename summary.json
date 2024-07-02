@@ -33,5 +33,7 @@
   "40": "This article provides shortcut key instructions for some commonly used NeoVim distributions - NvChad",
   "41": "This article explains how to install and configure Zsh, utilizing Oh-My-Zsh to enhance terminal appearance with themes and plugins.",
   "42": "This article briefly provides the commonly used commands and shortcut keys of the terminal reuse tool tmux. ",
-  "43": "This article briefly introduces the commonly used shortcut keys of the bash shell."
+  "43": "This article briefly introduces the commonly used shortcut keys of the bash shell.",
+  "44": "The article mainly introduces how to use Docker to install MongoDB when the CPU instruction set is not supported",
+  "45": "The article mainly introduces how to solve the program running problems caused by the libk5crypto.so.3 dynamic library"
 }
