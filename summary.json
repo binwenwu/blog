@@ -35,5 +35,6 @@
   "42": "This article briefly provides the commonly used commands and shortcut keys of the terminal reuse tool tmux. ",
   "43": "This article briefly introduces the commonly used shortcut keys of the bash shell.",
   "44": "The article mainly introduces how to use Docker to install MongoDB when the CPU instruction set is not supported",
-  "45": "The article mainly introduces how to solve the program running problems caused by the libk5crypto.so.3 dynamic library"
+  "45": "The article mainly introduces how to solve the program running problems caused by the libk5crypto.so.3 dynamic library",
+  "46": "This article guides on deploying an HBase cluster, covering steps for setting hostnames, configuring SSH, JDK environment, deploying Hadoop and Zookeeper, and finally setting up HBase."
 }
