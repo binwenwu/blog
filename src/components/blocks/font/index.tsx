@@ -34,9 +34,9 @@ export const Font = () => {
       <AnimateSpan>s</AnimateSpan>
       <AnimateSpan>T</AnimateSpan>
       <AnimateSpan>u</AnimateSpan>
-      <AnimateSpan>Uu</AnimateSpan>
-      <AnimateSpan>v</AnimateSpan>
-      <AnimateSpan>W</AnimateSpan>
+      <AnimateSpan>Vv</AnimateSpan>
+      <AnimateSpan>w</AnimateSpan>
+      <AnimateSpan>X</AnimateSpan>
     </Block>
   )
 }
