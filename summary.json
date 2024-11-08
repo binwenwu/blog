@@ -40,5 +40,6 @@
   "47": "This article mainly introduces how to use the snapshot function of hbase to migrate data between two hbase clusters. ",
   "48": "This article explains how to configure the clash proxy for Linux systems and set it as a system service. ",
   "49": "The article mainly introduces how to compile and install OpenCV on Mac, and test the corresponding JNI. ",
-  "50": "The article describes how to activate the entire Jetbrains family of products through plugins. "
+  "50": "The article describes how to activate the entire Jetbrains family of products through plugins. ",
+  "51": "This article briefly introduces the concept of CUDA and provides installation tutorials and a simple programming case. "
 }
