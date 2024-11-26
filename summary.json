@@ -41,5 +41,6 @@
   "48": "This article explains how to configure the clash proxy for Linux systems and set it as a system service. ",
   "49": "The article mainly introduces how to compile and install OpenCV on Mac, and test the corresponding JNI. ",
   "50": "The article describes how to activate the entire Jetbrains family of products through plugins. ",
-  "51": "This article briefly introduces the concept of CUDA and provides installation tutorials and a simple programming case. "
+  "51": "This article briefly introduces the concept of CUDA and provides installation tutorials and a simple programming case. ",
+  "52": "The article discusses how to solve the problem of geotrellis global data slicing map by customizing tile layout. "
 }
