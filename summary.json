@@ -46,5 +46,6 @@
   "53": "Learn how to resolve SSH connection issues when cloning GitHub repositories, including using alternative ports and configuring SSH settings.",
   "54": "Record the process of creating a Docker image for a Python project once.",
   "55": "This article introduces how to additionally bind a new IP for CentOS.",
-  "56": "How to implement your own MVC framework from scratch. "
+  "56": "How to implement your own MVC framework from scratch. ",
+  "57": "This blog shows the dining philosophers problem in Java, a deadlock scenario, and two solutions: waiter and odd-even approaches. "
 }
